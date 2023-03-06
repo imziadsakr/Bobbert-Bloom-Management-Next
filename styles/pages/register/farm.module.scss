@@ -1,0 +1,94 @@
+@import "~sass-variables";
+
+.screen {
+  min-height: 100vh;
+  background: $blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.formContainer {
+  background: $yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  border-radius: 54px;
+  padding: 3.5rem 2rem;
+  width: 35rem;
+  h2 {
+    font-weight: 800;
+    margin-bottom: 5px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+}
+
+.input {
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  width: 100%;
+  margin-top: 1rem;
+  color: $black;
+  height: 3.5rem;
+  &::placeholder {
+    color: $grey;
+    opacity: 1;
+  }
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.formDetailsContainer {
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  .detailsInputsContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.detailsPlaceholderContainer {
+  flex: 1;
+  height: 8rem;
+  background: $white;
+  display: flex;
+  border-radius: 20px;
+  margin: 1rem 0 0 1rem;
+}
+
+.nextButtonContainer {
+  background: $darkBlue;
+  padding: 0.8rem 5rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+  h5 {
+    color: $white;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,71 @@
+@import "~sass-variables";
+
+.screen {
+  display: flex;
+  min-height: 100vh;
+  background: $yellow;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+
+.container {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: $purple;
+}
+
+.subHeader {
+  font-weight: 800;
+  font-size: 2.3rem;
+  margin-top: 0.8rem;
+  color: $purple;
+  margin-bottom: 2rem;
+}
+
+.tabsContainer {
+  display: flex;
+  width: fit-content;
+  justify-content: flex-start;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  padding: 12px 1.5rem 10px 1.5rem;
+  background: $blue;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-right: 0.8rem;
+  cursor: pointer;
+  h2 {
+    color: $white;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  &.active {
+    background: $white;
+    h2 {
+      color: $black;
+    }
+  }
+}
+
+.contentContainer {
+  background: $white;
+  flex: 1;
+  width: 100%;
+  border-top-right-radius: 38px;
+  border-bottom-right-radius: 38px;
+  border-bottom-left-radius: 38px;
+  display: flex;
+  min-height: 0;
+}

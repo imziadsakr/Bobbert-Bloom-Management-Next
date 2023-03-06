@@ -1,0 +1,26 @@
+@import "~sass-variables";
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.currentMonth {
+  font-weight: 800;
+  font-size: 2rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.monthButton {
+  color: $blueGrey;
+  width: 10rem;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}

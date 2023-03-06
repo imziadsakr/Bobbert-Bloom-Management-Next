@@ -1,0 +1,127 @@
+@import "~sass-variables";
+
+.container {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+  max-height: 100%;
+  flex: 1;
+}
+
+.tasksContainer {
+  flex: 1;
+  background: $blue;
+  height: 100%;
+  padding: 1rem 0.8rem 0 0.8rem;
+  border-radius: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.tasksContainerTitle {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: $white;
+  margin-top: 0.5rem;
+  &.overdue {
+    color: $red;
+  }
+}
+
+.tasksScrollContainer {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
+  overflow-y: auto;
+}
+
+.taskContainer {
+  width: 100%;
+  border-radius: 25px;
+  background: $yellow;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  height: min-content;
+}
+
+.taskInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  h2 {
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 3px;
+    white-space: nowrap;
+  }
+  h3 {
+    font-size: 0.8rem;
+    color: $black;
+    white-space: nowrap;
+    &.overdue {
+      color: $red;
+    }
+  }
+}
+
+.taskCap {
+  width: 2.3rem;
+  &.overdue {
+    background: $red;
+  }
+  &.today {
+    background: $darkYellow;
+  }
+  &.tomorrow {
+    background: $grey;
+  }
+}
+
+.thisWeekContainer {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin: 1rem 0;
+  }
+}
+
+.thisWeekScrollContainer {
+  flex: 1;
+  overflow: auto;
+  width: 100%;
+}
+
+.thisWeekTaskContainer {
+  background: $blue;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    color: $white;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  h4 {
+    margin-top: 6px;
+    color: $white;
+    font-size: 0.8rem;
+  }
+}

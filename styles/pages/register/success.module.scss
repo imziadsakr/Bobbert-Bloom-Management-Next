@@ -1,0 +1,46 @@
+@import "~sass-variables";
+
+.screen {
+  min-height: 100vh;
+  background: $blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    width: 10rem;
+  }
+
+  h2 {
+    color: $white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 3rem 0 1.1rem 0;
+  }
+  h3 {
+    color: $white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+  }
+
+  .nextButtonContainer {
+    background: $darkBlue;
+    padding: 0.8rem 5rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+    h5 {
+      color: $white;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+  }
+}

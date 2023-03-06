@@ -1,0 +1,76 @@
+@import "~sass-variables";
+
+.container {
+  height: 100vh;
+  width: 16rem;
+  background: $blue;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  h2 {
+    color: $white;
+    font-weight: 700;
+    margin-top: 1.5rem;
+  }
+}
+
+.scrollContainer {
+  flex: 1;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.planContainer {
+  background: $white;
+  margin: 0 0.6rem 1rem 0.6rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.planHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $purple;
+  }
+}
+
+.planSpecies {
+  font-size: 0.7rem;
+  margin-top: 2px;
+  color: $purple;
+}
+
+.planOptionsContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  h5 {
+    color: $purple;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-right: 8px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.planNotes {
+  color: $purple;
+  margin-top: 8px;
+  font-weight: 700;
+  font-style: italic;
+}

@@ -1,0 +1,152 @@
+@import "~sass-variables";
+
+.container {
+  flex: 1;
+  padding: 1rem 1rem 0 1rem;
+  min-height: 0;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.currentPlantContainer {
+  border-radius: 30px;
+  background: $yellow;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.plantDetailsContainer,
+.plantOptionsContainer {
+  background: $white;
+  width: 50%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.plantDetailsContainer {
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.plantImage {
+  background: $blue;
+  border-radius: 30px;
+  flex: 1;
+}
+
+.plantInfoContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3,
+  h4,
+  h5 {
+    color: $purple;
+  }
+  h3 {
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 6px 0;
+  }
+  h5 {
+    font-size: 0.9rem;
+  }
+}
+
+.plantOptionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.plantOptionRow {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.6rem;
+  h3,
+  h4,
+  h5 {
+    font-weight: 700;
+    flex: 1;
+    font-size: 0.9rem;
+  }
+  h3,
+  h4 {
+    flex: 1.2;
+  }
+}
+
+.editButton {
+  background: $blueGrey;
+  border: none;
+  color: $white;
+  font-weight: 700;
+  font-size: 0.7rem;
+  border-radius: 50px;
+  padding: 10px 1.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.plantsContainer {
+  margin-top: 2rem;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow: auto;
+}
+
+.plantContainer {
+  width: calc(50% - 0.5rem);
+  background: $yellow;
+  border-radius: 30px;
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 30px;
+}
+
+.plantImage {
+  background: $blue;
+  border-radius: 30px;
+  flex: 1;
+  height: 100%;
+}
+
+.plantInfoContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 0;
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 6px 0;
+  }
+  h5 {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,75 @@
+@import "~sass-variables";
+@import "react-big-calendar/lib/sass/styles";
+@import "react-big-calendar/lib/addons/dragAndDrop/styles";
+
+.rbc-toolbar {
+  display: none !important;
+}
+
+.rbc-month-view {
+  border-radius: 44px !important;
+  overflow: hidden !important;
+  border: 4px solid $black !important;
+}
+
+.rbc-date-cell {
+  padding: 5px 10px !important;
+  button {
+    font-weight: 700 !important;
+  }
+}
+
+.rbc-month-row + .rbc-month-row {
+  border-top: 3px solid $black !important;
+}
+
+.rbc-day-bg + .rbc-day-bg {
+  border-left: 3px solid $black !important;
+}
+
+.rbc-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-bottom: 3px solid $black !important;
+  span {
+    font-weight: 700 !important;
+  }
+}
+
+.rbc-month-header {
+  height: 1.5rem !important;
+}
+
+.rbc-header + .rbc-header {
+  border-left: 3px solid $black !important;
+}
+
+.rbc-event,
+.rbc-day-slot .rbc-background-event {
+  padding: 3px !important;
+  font-size: 0.75rem !important;
+  text-align: center !important;
+  border-radius: 0 !important;
+}
+
+.rbc-ellipsis,
+.rbc-show-more,
+.rbc-row-segment .rbc-event-content,
+.rbc-event-label {
+  font-weight: 700 !important;
+}
+
+.rbc-event:focus,
+.rbc-day-slot .rbc-background-event:focus {
+  outline: none !important;
+}
+
+.rbc-today {
+  background-color: #50516849 !important;
+}
+
+.rbc-show-more {
+  color: $blue !important;
+  background: transparent !important;
+}

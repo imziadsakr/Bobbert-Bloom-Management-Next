@@ -1,0 +1,184 @@
+@import "~sass-variables";
+
+.screen {
+  display: flex;
+  min-height: 100vh;
+  background: $yellow;
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.header {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: $purple;
+}
+
+.subHeader {
+  font-weight: 800;
+  font-size: 2.3rem;
+  margin-top: 0.8rem;
+  color: $purple;
+  margin-bottom: 2rem;
+}
+
+.dashboardRow {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.greetingContainer {
+  background: $white;
+  border-radius: 48px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  h3 {
+    font-weight: 800;
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.weatherContainer {
+  background: $white;
+  border-radius: 48px;
+  flex: 0.5;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .weatherIcon {
+    font-size: 2.5rem;
+    color: $blue;
+    margin-bottom: 15px;
+  }
+  h5 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  h6 {
+    font-size: 1.1rem;
+    font-weight: 200;
+  }
+}
+
+.statContainer {
+  background: $white;
+  border-radius: 48px;
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  &.tomorrow {
+    background: $green;
+    h2,
+    h3 {
+      color: $white;
+    }
+  }
+  &.overdue {
+    background: $red;
+    h2,
+    h3 {
+      color: $white;
+    }
+  }
+  &.wide {
+    flex: 1.8;
+  }
+}
+
+.progressContainer {
+  background: $white;
+  border-radius: 48px;
+  flex: 1;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-weight: 800;
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+  }
+}
+
+.progressBarsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  h5 {
+    font-weight: 800;
+    margin-bottom: 5px;
+  }
+}
+
+.progressBarContainer {
+  width: 100%;
+  height: 2rem;
+  background: $yellow;
+  border-radius: 50px;
+  border: 3px solid $black;
+  position: relative;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  .progressBarProgress {
+    left: 0;
+    height: 100%;
+    background: $black;
+    border-radius: 48px;
+  }
+}
+
+.shareButton {
+  background: $black;
+  border: none;
+  border-radius: 17px;
+  color: $white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.dashboardImagesContainer {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  .dashboardImage {
+    flex: 1;
+    background: $white;
+    border-radius: 48px;
+  }
+}

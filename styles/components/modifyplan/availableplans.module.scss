@@ -1,0 +1,72 @@
+@import "~sass-variables";
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  h2 {
+    color: $purple;
+    font-weight: 800;
+    font-size: 1.6rem;
+  }
+  .searchButton {
+    color: $purple;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 5px solid $purple;
+    background: transparent;
+    border-radius: 50px;
+    padding: 3px 1.7rem;
+    cursor: pointer;
+  }
+}
+
+.plansContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.planContainer {
+  width: calc(50% - 0.5rem);
+  background: $blue;
+  border-radius: 30px;
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 30px;
+}
+
+.planImage {
+  background: $white;
+  border-radius: 30px;
+  flex: 1;
+  height: 100%;
+}
+
+.planInfoContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 0;
+  h3,
+  h4,
+  h5 {
+    color: $white;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 6px 0;
+  }
+  h5 {
+    font-size: 0.75rem;
+  }
+}
